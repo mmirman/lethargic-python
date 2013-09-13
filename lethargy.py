@@ -1,7 +1,4 @@
-import Queue
 import weakref
-
-
 
 class TQ:
 
