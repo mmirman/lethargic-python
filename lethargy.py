@@ -1,5 +1,3 @@
-
-import Queue
 import weakref
 
 
