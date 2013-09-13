@@ -1,14 +1,16 @@
-
 import Queue
 import weakref
 
 
 
 class TQ:
-    head = None
-    tail = None
-    size = 0
-    
+
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.size = 0        
+
+
     def qsize(self):
         return self.size
 
@@ -66,11 +68,12 @@ class TQ:
 
 
 class Lazy(object):
-    next = None
-    prev = None
-    enqueued = False
-    
+   
     def __init__(self, lethargy, foo, *args, **kargs):
+        self.next = None
+        self.prev = None
+        self.enqueued = False
+
         self.lethargy = lethargy
         self.foo = foo
         self.args = args
