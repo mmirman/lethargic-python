@@ -92,10 +92,8 @@ class Lazy(object):
 
 class lethargy(object):
 
-
-    thunk_queue = TQ()
-
     def __init__(self, max_waiting_thunks = 3):
+        self.thunk_queue = TQ()
         self.max_waiting_thunks = max_waiting_thunks
 
     def delay(self, foo, *args, **kargs):
